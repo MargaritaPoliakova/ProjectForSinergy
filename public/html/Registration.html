@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Регистрация</title>
+</head>
+
+
+<body>
+    <form align="center" action="action_page.php">
+        <div class="container">
+          <h1>Регистрация</h1>
+          <hr>
+      
+          <label  for="email"><b>Придумайте логин</b></label>
+          <input  type="text" placeholder="Email или номер телефона" name="email" required>
+          <br>
+          <br>
+          <label  for="name"><b>Имя</b></label>
+          <input  type="text" placeholder="Введите имя" name="name" required >
+          <br>
+          <br>
+          <label  for="surname"><b>Фамилия</b></label>
+          <input  type="text" placeholder="Введите фамилию"  name="surname" required>
+          <br>
+          <br>
+          <label  for="father"><b>Отчество</b></label>
+          <input  type="text" placeholder="Введите отчество" name="father" required>
+          <input type="radio" >Нет отчества<Br>
+          <br>
+          <br>
+          <label  for="psw-repeat"><b>Паспортные данные</b></label>
+          <input  type="number" placeholder="Серия" name="series" required>
+          <input  type="number" placeholder="Номер" name="number" required>
+          <br>
+          <br>
+          <label  for="psw"><b>Пароль</b></label>
+          <input  type="password" placeholder="Введите пароль" name="psw" required >
+          <button type="button" class="generate_psw">Сгенирировать пароль</button>
+          <br>
+          <br>
+          <label  for="psw-repeat"><b>Повторите пароль</b></label>
+          <input  type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+          <hr>
+          
+
+          <button  type="button" name="registerbtn">Заригистрироваться</button>
+        </div>
+      
+        <div class="container signin">
+          <p>Уже зарегистрированы? <a href="#">Войти</a>.</p>
+        </div>
+      </form>
+</body>
+</html>
