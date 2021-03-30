@@ -13,40 +13,49 @@
 
 <body>
     
-    <form  method="POST" action="/profile">
-        <div class="container">
-          <a>Регистрация</a>
+    <form method="post" action="/profile">
+      <h1>Регистрация</h1>
+        <div class="form-group">
           <label  for="email"><b>Придумайте логин</b></label>
           <input  type="text" placeholder="Email или номер телефона" name="email" required>
+        </div>
           <br>
-          <br>
+        <div class="form-group">
           <label  for="name"><b>Имя</b></label>
           <input  type="text" placeholder="Введите имя" name="name" required >
+        </div>
           <br>
-          <br>
+        <div class="form-group">
           <label  for="surname"><b>Фамилия</b></label>
           <input  type="text" placeholder="Введите фамилию"  name="surname" required>
+        </div>
           <br>
+        <div class="form-group">
+          <label  for="father"><b>Отчество</b>
+            <input  type="text" placeholder="Введите отчество" name="father" required>
+            <input type="checkbox" class="form-check-input" checked="checked" name="no">Нет отчества
+           </label>
+        </div>
           <br>
-          <label  for="father"><b>Отчество</b></label>
-          <input  type="text" placeholder="Введите отчество" name="father" required>
-          <input type="radio" >Нет отчества<Br>
-          <br>
+        <div class="form-group">
           <label  for="psw-repeat"><b>Паспортные данные</b></label>
           <input  type="number" placeholder="Серия" name="series" required>
           <input  type="number" placeholder="Номер" name="number" required>
+        </div>
           <br>
-          <br>
+        <div class="form-group">
           <label  for="psw"><b>Пароль</b></label>
           <input  type="password" placeholder="Введите пароль" name="psw" required >
-          <button type="button" class="generate_psw">Сгенирировать пароль</button>
+          <button type="button" class="generate_psw" name="generate">Сгенирировать пароль</button>
+        </div>
           <br>
-          <br>
+        <div class="form-group">
           <label  for="psw-repeat"><b>Повторите пароль</b></label>
           <input  type="password" placeholder="Повторите пароль" name="psw-repeat" required>
-          <br>
-          <button  type="button" name="registerbtn">Заригистрироваться</button>
         </div>
+          <br>
+        <button  type="submit" name="registerbtn">Заригистрироваться</button>
+        
         
       </form>
 </body>

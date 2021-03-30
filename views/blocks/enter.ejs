@@ -11,25 +11,25 @@
     
 </head>
 <body> 
-    <form method="POST" action="/profile">
-        <div>
-          <a>Вход</a>
-          <br>
+    <form method="post" action="/profile">
+      <br>
+         <div class="form-group">
           <label for="uname"><b>Логин</b></label>
           <input type="text" placeholder="Введите логин" name="login" required>
+         </div>
+         <br>
+         <div class="form-group">
+           <label for="psw"><b>Пароль</b></label>
+           <input type="password" placeholder="Введите пароль" name="psw" required>
+         </div>
+         <br>
+         <div class="form-check">
+             <label class="form-check-label">
+             <input type="checkbox" class="form-check-input" checked="checked" name="remember">Запомнить
+             </label>
+         </div>
           <br>
-          <br>
-          <label for="psw"><b>Пароль</b></label>
-          <input type="password" placeholder="Введите пароль" name="psw" required>
-          <br>
-          <br>
-          <button type="button">Войти</button>
-          <br>
-          <br>
-          <label>
-            <input type="checkbox" checked="checked" name="remember">Запомнить
-          </label>
-        </div>
+          <button type="submit">Войти</button>
       </form>
 </body>
 </html>
