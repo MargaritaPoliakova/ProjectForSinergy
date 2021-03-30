@@ -1,0 +1,12 @@
+body {background-color: rgb(110, 155, 240);
+text-align: center;
+}
+h1{color: white;
+}
+input{
+  font-style: oblique;
+}
+button{
+  background-color: rgb(27, 153, 236);
+  text-emphasis-color: white;
+}
